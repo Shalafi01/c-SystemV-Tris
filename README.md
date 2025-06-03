@@ -1,4 +1,4 @@
-# c-SystemV-Tris: Multiplayer Tic-Tac-Toe with Shared Memory and Semaphores
+# c-SystemV-Tris: Tris game with Shared Memory and Semaphores
 
 ## Description
 
