@@ -66,3 +66,11 @@ If CTRL-C is pressed:
 - If a player fails to make a move within the timeout, the game is awarded to the other player.
 - Game ends automatically on full board or if a client disconnects.
 - Server automatically cleans up IPC resources on shutdown.
+
+## Screenshots
+<img src="img/screenshot_1.png" alt="Contacts App Screenshot" style="width: 500px;"/>
+
+<img src="img/screenshot_2.png" alt="Contacts App Screenshot" style="width: 500px;"/>
+
+<img src="img/screenshot_3.png" alt="Contacts App Screenshot" style="width: 500px;"/>
+
