@@ -1,24 +1,34 @@
 # Tris with Shared Memory and Semaphores
 
-## Description
-**SystemV-Tris** is a terminal-based implementation of the classic **Tic-Tac-Toe** game (also known as "Tris"), built in C using **System V IPC mechanisms**. It supports two human players competing in real time on Unix/Linux systems. The server manages shared memory, semaphores, and process communication, while the clients handle user interaction and rendering of the game board.
+**SystemV-Tris** is a terminal-based implementation of the classic **Tic-Tac-Toe** game (also known as "Tris"), built in C using **System V IPC mechanisms**. It supports two human players competing in real time on Unix/Linux systems. The server manages shared memory, semaphores, and process communication, while the clients handle user interaction and rendering of the game board. The game supports variable-sized square grids (e.g. 3x3, 4x4, ..., NxN), with victory conditions adapting accordingly (N symbols aligned).
 
-This project demonstrates low-level interprocess communication using:
-- Shared memory (`shmget`, `shmat`, etc.)
-- Semaphores (`semget`, `semop`, etc.)
-- Process creation (`fork`)
-- Signal handling (`signal`, `kill`)
-
-The game supports variable-sized square grids (e.g. 3x3, 4x4, ..., NxN), with victory conditions adapting accordingly (N symbols aligned).
+# Table of Contents
+- [Tris with Shared Memory and Semaphores](#tris-with-shared-memory-and-semaphores)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [How It Works](#how-it-works)
+    - [🧠 TriServer](#-trisserver)
+      - [Build Instructions (Linux)](#build-instructions-linux)
+      - [Usage](#usage)
+    - [TriClient](#triclinet)
+  - [Notes](#notes)
+  - [Screenshots](#screenshots)
 
 ## Features
-- Multiplayer game using shared memory
+- Local multiplayer game using shared memory
 - Turn-based logic synchronized with semaphores
 - Win detection (horizontal, vertical, diagonal)
 - Timeout for moves (optional)
 - Graceful termination on `CTRL-C` with IPC cleanup
 - Asynchronous communication between server and clients
 - Support for custom symbols per player
+
+## Technologies Used
+This project demonstrates low-level interprocess communication using:
+- Shared memory
+- Semaphores
+- Process creation and concurrent arbitration
+- Signal handling
 
 ## How It Works
 The system consists of **two executables**:
