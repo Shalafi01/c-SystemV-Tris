@@ -7,7 +7,7 @@
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [How It Works](#how-it-works)
-    - [🧠 TriServer](#-trisserver)
+    - [TriServer](#-trisserver)
       - [Build Instructions (Linux)](#build-instructions-linux)
       - [Usage](#usage)
     - [TriClient](#triclinet)
@@ -33,7 +33,7 @@ This project demonstrates low-level interprocess communication using:
 ## How It Works
 The system consists of **two executables**:
 
-### 🧠 TriServer
+### TriServer
 Launches the game, initializes IPC, and manages the game loop. Three semaphores are used to control the game flow in the order: Client1 → Server → Client2 → Server → ...
 
 #### Build Instructions (Linux)
