@@ -1,4 +1,4 @@
-# c-SystemV-Tris: Tris game with Shared Memory and Semaphores
+# Tris with Shared Memory and Semaphores
 
 ## Description
 **SystemV-Tris** is a terminal-based implementation of the classic **Tic-Tac-Toe** game (also known as "Tris"), built in C using **System V IPC mechanisms**. It supports two human players competing in real time on Unix/Linux systems. The server manages shared memory, semaphores, and process communication, while the clients handle user interaction and rendering of the game board.
