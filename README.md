@@ -34,7 +34,7 @@ Launches the game, initializes IPC, and manages the game loop.
 ./TriServer <timeout> <symbol1> <symbol2>
 
 Example:
-'''./TriServer 10 O X'''
+./TriServer 10 O X'''
 
 timeout: Max time in seconds for each player to make a move (0 = no timeout).
 symbol1, symbol2: Custom symbols for each player.
