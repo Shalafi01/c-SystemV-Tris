@@ -30,11 +30,11 @@ The system consists of **two executables**:
 Launches the game, initializes IPC, and manages the game loop.
 
 #### Usage:
-```bash
+<pre>```bash
 ./TriServer <timeout> <symbol1> <symbol2>
 
 Example:
-./TriServer 10 O X```
+./TriServer 10 O X``` </pre>
 
 timeout: Max time in seconds for each player to make a move (0 = no timeout).
 symbol1, symbol2: Custom symbols for each player.
